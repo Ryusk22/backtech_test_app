@@ -1,5 +1,8 @@
 # README(backtech_test_app)
 
+![localhost_3000_login](https://user-images.githubusercontent.com/47814904/93738690-5d709100-fc21-11ea-89c1-a9f55c82c1dc.png)
+
+
 ## 理解していない部分
 - sequelizeの仕組みをあまり理解していない。データベース接続を容易にするもの、くらいの理解度。
 
