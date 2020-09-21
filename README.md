@@ -10,12 +10,12 @@
 genSaltSyncで変数saltを作り、hash作成の際にそれを第2引数にしないと  
 compareSyncでうまく動作せず、このsaltなどの仕組みがあまり理解出来ていない。
 
-- async async
+- async await  
 await/asyncは非同期処理を同期的に行うためのものって理解で、  
 nodeの非同期処理のデメリットやなぜ同期的に行うために  
 async asyncを使うのかをあまり理解できていない。
 
-- promise
+- promise  
 generateResetTokenでPromiseを使っているが、  
 ここでPromiseを使って非同期的に実装する必要があるのかは理解していない。  
 上記に繋がる。
