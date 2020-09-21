@@ -76,7 +76,7 @@ router.post('/', async (req, res, next) => {
 router.get('/reset/:token', async (req, res) => {
   const user = await User.findOne({ where: { resetPasswordToken: req.params.token } });
   if (!user || user.resetPasswordToken > Date.now()) {
-    req.flash('error', 'パスワードリセットトークンが正しくないか、</br>有効期限が切れています。');
+    req.flash('error', 'パスワードリセットトークンが正しくないか、有効期限が切れています。');
     return res.redirect('/forgot');
   }
   res.render('reset', { token: req.params.token });
@@ -85,7 +85,7 @@ router.get('/reset/:token', async (req, res) => {
 router.post('/reset/:token', async (req, res, next) => {
   const user = await User.findOne({ where: { resetPasswordToken: req.params.token } });
   if (!user || user.resetPasswordToken > Date.now()) {
-    req.flash('error', 'パスワードリセットトークンが正しくないか、</br>有効期限が切れています。');
+    req.flash('error', 'パスワードリセットトークンが正しくないか、有効期限が切れています。');
     return res.redirect('back');
   }
   if (req.body.password === req.body.confirm) {
