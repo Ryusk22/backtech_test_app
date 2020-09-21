@@ -24,6 +24,9 @@ generateResetTokenでPromiseを使っているが、
 
 ## 機能概要
 
+- 環境  
+https://github.com/Ryusk22/backtech_test_app/blob/master/package.json
+
 - [x] 機能１−１
   - [x] ユーザーアカウントを作成する機能
   - [x] ログイン画面からログインする機能
