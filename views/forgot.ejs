@@ -1,0 +1,11 @@
+<% if(messages.success) { %>
+  <div class="alert alert-success" role="alert"><%=messages.success %></div><br/>
+<% } else if (messages.error) { %>
+  <div class="alert alert-danger" role="alert"><%=messages.error %></div><br/>
+<% } %>
+<h1>パスワードを忘れた?</br>まだ諦めるな。</h1>
+<p>-- 救世主のページ --</p>
+<form style='margin: 2em;' method='post' action='/forgot'>
+  <input class="m-4" type='email' name='email' placeholder='Email' autofocus required /></br>
+  <input style='background: #333366; color: white;' value="Reset Password" type='submit' />
+</form>

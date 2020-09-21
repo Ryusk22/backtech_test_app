@@ -1,0 +1,14 @@
+<% if(messages.success) { %>
+  <div class="alert alert-success" role="alert"><%=messages.success %></div><br/>
+<% } else if (messages.error) { %>
+  <div class="alert alert-danger" role="alert"><%=messages.error %></div><br/>
+<% } %>
+<h1>ログイン中</h1>
+<p>-- HOME --</p>
+<p> 名前: <%= user.name %></p>
+<p> Email: <%= user.email %></p>
+<a style='text-decoration: none; color: #333366' href='/extra'>extra.ejsのページへ</br></a>
+<a style='text-decoration: none; color: #333366' href='/'>index.ejsのページへ</a>
+<form style='margin: 2em;' method='post' action='/logout'>
+  <button style='background: #333366; color: white;'>ログアウト</button>
+</form>

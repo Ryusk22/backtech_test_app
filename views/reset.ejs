@@ -1,0 +1,7 @@
+<h1>パスワードをリセット</h1>
+<p>-- 蘇りのページ --</p>
+<form style='margin: 2em;' method='post' action='/forgot/reset/<%= token%>'>
+  <input type='password' name='password' placeholder='new password' autofocus required /></br>
+  <input type='password' name='confirm' placeholder='Confirm password' required /></br>
+  <input style='background: #333366; color: white;' value="Update Password" type='submit' />
+</form>

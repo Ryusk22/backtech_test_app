@@ -1,0 +1,13 @@
+<% if(messages.success) { %>
+  <div class="alert alert-success" role="alert"><%=messages.success %></div><br/>
+<% } else if (messages.error) { %>
+  <div class="alert alert-danger" role="alert"><%=messages.error %></div><br/>
+<% } %>
+<h1>ログイン</h1>
+<form style='margin: 2em;' method='post' action='/login'>
+  <input type='email' name='email' placeholder='Email' required />
+  <input type='password' name='password' placeholder='Password' required />
+  <input style='background: #333366; color: white;' type='submit' />
+</form>
+<a style='text-decoration: none; color: #333366;' href='/register'>新規登録</a></br>
+<a style='text-decoration: none; color: #333366' href='/forgot'>パスワードを忘れた</a>
