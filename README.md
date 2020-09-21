@@ -57,7 +57,7 @@ https://github.com/Ryusk22/backtech_test_app/blob/master/package.json
 ### 機能１−２
 
 - VScodeのextensionであるRESTAPIを用いてユーザー作成のPOST処理を送信すると  
-CSRF対策によって、エラーが発生する。
+「invalid csrf token」エラーが発生する。  
 [![Image from Gyazo](https://i.gyazo.com/40c35e00d1827505eaadb1ffc0a74ece.gif)](https://gyazo.com/40c35e00d1827505eaadb1ffc0a74ece)
 
 ### 機能１−３
