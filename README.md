@@ -28,8 +28,10 @@ generateResetTokenでPromiseを使っているが、
 ## 機能概要
 
 - 環境  
-https://github.com/Ryusk22/backtech_test_app/blob/master/package.json
-
+  - [package.json](https://github.com/Ryusk22/backtech_test_app/blob/master/package.json)
+  - node バージョン  
+![__Programming_backtech_test_app](https://user-images.githubusercontent.com/47814904/93738797-a32d5980-fc21-11ea-996b-a0c4814cad0d.png)  
+  - DB postgres使用
 - [x] 機能１−１
   - [x] ユーザーアカウントを作成する機能
   - [x] ログイン画面からログインする機能
